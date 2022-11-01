@@ -4,19 +4,24 @@ exports[`CounterComponent debe de hacer match con el snapshot 1`] = `
 <div
   id="root1"
 >
-  <h1>
-    Conuter 10
-  </h1>
-  <hr />
-  <button
-    class="btn btn-danger mx-1"
+  <app-navbar />
+  <div
+    class="container mt-5"
   >
-    +1
-  </button>
-  <button
-    class="btn btn-danger mx-1"
-  >
-    -1
-  </button>
+    <h1>
+      Conuter 10
+    </h1>
+    <hr />
+    <button
+      class="btn btn-danger mx-1"
+    >
+      +1
+    </button>
+    <button
+      class="btn btn-danger mx-1"
+    >
+      -1
+    </button>
+  </div>
 </div>
 `;

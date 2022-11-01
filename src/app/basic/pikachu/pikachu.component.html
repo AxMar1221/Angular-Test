@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+<div class="container mt-5">
+  <div *ngIf="!pikachu, else elseBlock">
+    <h1>Pika Pika</h1>
+    <h2>Loading...</h2>
+  </div>
+
+  <ng-template #elseBlock>
+    <h3>{{ pikachu?.name | titlecase }}</h3>
+    <hr>
+    <img [src]="pikachu?.sprites?.front_default" [alt]="pikachu?.name">
+  </ng-template>
+</div>
